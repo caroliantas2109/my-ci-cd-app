@@ -1,38 +1,110 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f3efff;
+  /* lilás clarinho */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(102, 51, 153, 0.2);
+}
+
+h1 {
+  color: #6a0dad;
+  /* roxo forte */
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.description {
+  text-align: center;
+  color: #777;
+  margin-bottom: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #4b2e83;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcd3ff;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 0 2px rgba(106, 13, 173, 0.15);
+}
+
+button {
+  background: linear-gradient(135deg, #7b2cbf, #9d4edd);
   color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #6a0dad, #7b2cbf);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: #e63946;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.success {
+  color: #2a9d8f;
+  font-weight: bold;
+  margin-top: 18px;
+  text-align: center;
 }
