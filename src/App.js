@@ -67,6 +67,7 @@ function App() {
       <div className="card">
         <h1>Carol Iantas</h1>
         <h2>SODV CI/CD Pipeline Assignment</h2>
+        <h3>Updated automatically by CI/CD</h3>
         <p className="description">
           Simple React app
         </p>
